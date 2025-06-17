@@ -1,0 +1,10 @@
+package: sdk
+generate:
+  embedded-spec: true
+  models: true
+  client: true
+compatibility:
+  always-prefix-enum-values: true
+output: sdk.gen.go
+output-options:
+  client-type-name: ClientSDK
