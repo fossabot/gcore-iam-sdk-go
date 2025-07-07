@@ -212,7 +212,7 @@ type PostClientsClientIdTokensJSONBody struct {
 
 	// ExpDate Date when the API token becomes expired (ISO 8086/RFC 3339 format), UTC.
 	// If null, then the API token will never expire.
-	ExpDate *string `json:"exp_date,omitempty"`
+	ExpDate *string `json:"exp_date"`
 
 	// Name API token name.
 	Name string `json:"name"`
