@@ -1,4 +1,4 @@
-module github.com/G-Core/gcore-waap-sdk-go
+module github.com/G-Core/gcore-iam-sdk-go
 
 go 1.24.1
 
