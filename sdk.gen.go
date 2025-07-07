@@ -212,7 +212,7 @@ type PostClientsClientIdTokensJSONBody struct {
 
 	// ExpDate Date when the API token becomes expired (ISO 8086/RFC 3339 format), UTC.
 	// If null, then the API token will never expire.
-	ExpDate string `json:"exp_date"`
+	ExpDate *string `json:"exp_date,omitempty"`
 
 	// Name API token name.
 	Name string `json:"name"`
@@ -2170,10 +2170,10 @@ type PostClientsInviteUser4000 struct {
 	// Errors This object contains error descriptions per field from your request.
 	Errors *map[string][]string `json:"errors,omitempty"`
 }
-type PostClientsInviteUser4001 = []PostClientsInviteUser4001
-type PostClientsInviteUser4001 string
-type PostClientsInviteUser4002 = []PostClientsInviteUser4002
-type PostClientsInviteUser4002 string
+// type PostClientsInviteUser4001 = []PostClientsInviteUser4001
+// type PostClientsInviteUser4001 string
+// type PostClientsInviteUser4002 = []PostClientsInviteUser4002
+// type PostClientsInviteUser4002 string
 
 // Status returns HTTPResponse.Status
 func (r PostClientsInviteUserResponse) Status() string {
@@ -2696,7 +2696,7 @@ type GetClientsClientIdTokensResponse struct {
 
 		// ExpDate Date when the API token becomes expired (ISO 8086/RFC 3339 format), UTC.
 		// If null, then the API token will never expire.
-		ExpDate string `json:"exp_date"`
+		ExpDate *string `json:"exp_date,omitempty"`
 
 		// Expired Expiration flag. If true, then the API token has expired.
 		// When an API token expires it will be automatically deleted.
@@ -2829,7 +2829,7 @@ type GetClientsClientIdTokensTokenIdResponse struct {
 
 		// ExpDate Date when the API token becomes expired (ISO 8086/RFC 3339 format), UTC.
 		// If null, then the API token will never expire.
-		ExpDate string `json:"exp_date"`
+		ExpDate *string `json:"exp_date,omitempty"`
 
 		// Expired Expiration flag. If true, then the API token has expired.
 		// When an API token expires it will be automatically deleted.
@@ -4256,7 +4256,7 @@ func ParseGetClientsClientIdTokensResponse(rsp *http.Response) (*GetClientsClien
 
 			// ExpDate Date when the API token becomes expired (ISO 8086/RFC 3339 format), UTC.
 			// If null, then the API token will never expire.
-			ExpDate string `json:"exp_date"`
+			ExpDate *string `json:"exp_date,omitempty"`
 
 			// Expired Expiration flag. If true, then the API token has expired.
 			// When an API token expires it will be automatically deleted.
@@ -4389,7 +4389,7 @@ func ParseGetClientsClientIdTokensTokenIdResponse(rsp *http.Response) (*GetClien
 
 			// ExpDate Date when the API token becomes expired (ISO 8086/RFC 3339 format), UTC.
 			// If null, then the API token will never expire.
-			ExpDate string `json:"exp_date"`
+			ExpDate *string `json:"exp_date,omitempty"`
 
 			// Expired Expiration flag. If true, then the API token has expired.
 			// When an API token expires it will be automatically deleted.
