@@ -1,4 +1,6 @@
 # 🤝 Contribution Guide
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FG-Core%2Fgcore-iam-sdk-go.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FG-Core%2Fgcore-iam-sdk-go?ref=badge_shield)
+
 
 This repository is intended for building SDKs for IAM product. Please follow this guide to contribute effectively.
 
@@ -52,5 +54,8 @@ Open an issue or reach out to us directly if anything is unclear.
 # ⚖️ License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](https://github.com/G-Core/gcore-iam-sdk-go/blob/main/LICENSE) file for details.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FG-Core%2Fgcore-iam-sdk-go.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FG-Core%2Fgcore-iam-sdk-go?ref=badge_large)
 
 # 🙏 Thank You!
